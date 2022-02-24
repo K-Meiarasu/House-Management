@@ -50,7 +50,7 @@ function display(req,res)
     connection.query(sql, function (err, result) {
         if (err)
         {
-            res.json({response: "DB error"})
+            res.json({response: "Database Issue"})
         }
         else
         {
@@ -70,7 +70,7 @@ app.post('/addhouse',(req,res)=>{
     connection.query(sql, function (err, result) {
         if (err)
         {
-            res.json({response: "DB error"})
+            res.json({response: "Database Issue"})
         }
         else
         {
@@ -92,7 +92,7 @@ app.get('/gethouse',(req,res)=>{
     connection.query(sql, function (err, result) {
         if (err)
         {
-            res.json({response: "DB error"})
+            res.json({response: "Database Issue"})
         }
         else
         {
@@ -107,7 +107,7 @@ app.get('/deletehouse',(req,res)=>{
     connection.query(sql, function (err, result) {
         if (err)
         {
-            res.json({response: "DB error"})
+            res.json({response: "Database Issue"})
         }
         else
         {
@@ -129,7 +129,7 @@ app.get('/gethouse',(req,res)=>{
     connection.query(sql, function (err, result) {
         if (err)
         {
-            res.json({response: "DB error"})
+            res.json({response: "Database Issue"})
         }
         else
         {
